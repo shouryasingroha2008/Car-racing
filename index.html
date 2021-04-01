@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <style>
+            body{
+	background-image: url("racing.gif");
+    background-position: center;
+    background-size: cover;
+}
+#myCanvas
+{
+	border-width:10px;
+	background-color: white; 
+	border-style:ridge;
+}
+
+h1,h4
+{
+	color: white !important;
+    font-style: oblique;
+}
+h3{
+    color:white !important;
+}
+marquee{
+    background-color: gray;
+    color: white;
+    font-size: 20px;
+    height:23px;
+}
+        </style>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <title>Car racing</title>
+    </head>
+    <body onload="add()">
+        <marquee>WELCOME TO THE V-STAR RACE GAMING WEBPAGE, YOU CAN PLAY,PLAY,PLAY,AND WIN.</marquee>
+        <center>
+            <h1>CAR RACING</h1>
+            <h3>Game status: <span class="text-success" id="game_status"></span></h3>
+            <canvas id="myCanvas" width="800" height="500">
+            </canvas>
+            <h4>
+                <b class="text-danger">Note: </b> <span id="note">If any cars are not visible please click arrow keys</span>
+            </h4>
+        </center>
+        
+        <script src="main.js"></script>
+    </body>
+</html>
